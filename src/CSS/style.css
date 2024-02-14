@@ -8,4 +8,30 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  height: 50px;
+  background-color: #414141;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu .menu_link {
+  color: #fff;
+  font-style: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 35px;
 }
