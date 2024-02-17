@@ -13,10 +13,14 @@ html
 
 header
   position: relative
+  height: 50px
 
 nav
+  position: fixed
+  width: 100%
   height: 50px
   background-color: #212121
+  z-index: 2
 
 .menu
   display: flex
@@ -37,6 +41,7 @@ nav
 
 .subheader
   position: absolute
+  top: 50px
   width: 100%
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
@@ -192,3 +197,50 @@ nav
       font-size: 15px
       font-weight: 300
       line-height: 21px
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px
+  background: url(../img/bg/mobile_bg.png) center (center / cover) no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    &_1
+      background: url(../img/bg/mobile_screen_1.png) center (center / cover) no-repeat
+    &_2
+      background: url(../img/bg/mobile_screen_2.png) center (center / cover) no-repeat
+    &_3
+      background: url(../img/bg/mobile_screen_3.png) center (center / cover) no-repeat
+    &_4
+      background: url(../img/bg/mobile_screen_4.png) center (center / cover) no-repeat
+    &_5
+      background: url(../img/bg/mobile_screen_5.png) center (center / cover) no-repeat
+    &_6
+      background: url(../img/bg/mobile_screen_6.png) center (center / cover) no-repeat
+    &_subtitle
+      color: #fff
+      font-size: 24px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: center
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background-color: #000
+      margin: 0 auto
+      border-radius: 100%
+      cursor: pointer
+      
