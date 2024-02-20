@@ -1,3 +1,6 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+  
 html
   box-sizing: border-box
   margin: 0
@@ -29,13 +32,13 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu_link
+  &_link
     color: #fff
     font-style: 15px
     font-weight: 300
     text-decoration: none
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 35px
 
@@ -46,26 +49,26 @@ nav
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_logo
+  &_logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader_official
+  &_official
     opacity: 0.5
     margin-top: 6px
     color: #fff
     font-size: 13px
     font-weight: 400
 
-  .subheader_call
+  &_call
     color: #fff
     font-size: 12px
     font-weight: 300
     margin-top: 19px
     text-align: right
 
-  .subheader_phone
+  &_phone
     display: block
     margin-top: 8px
     color: #fff
@@ -76,7 +79,7 @@ nav
     text-decoration: none
     line-height: 12px
 
-  .subheader_btn
+  &_btn
     margin-top: 19px
     border-radius: 4px
     width: 172px
@@ -94,7 +97,7 @@ nav
   background: url('/src/img/bg/uber_bg.png') center (center / cover) no-repeat
   padding: 150px 0 135px 0
 
-  .promo_header
+  &_header
     color: #fff
     font-size: 60px
     font-weight: 700
@@ -103,7 +106,7 @@ nav
     margin: 0
     text-align: center
 
-  .promo_subheader
+  &_subheader
     font-size: 36px
     line-height: 36px
     color: #fff
@@ -113,7 +116,7 @@ nav
     margin-top: 22px
     text-align: center
 
-  .promo_descr
+  &_descr
     color: #fff
     font-size: 18px
     font-weight: 400
@@ -121,7 +124,7 @@ nav
     text-align: center
     margin-top: 23px
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     border-radius: 4px
@@ -140,6 +143,7 @@ nav
   padding: 71px 0 65px 0
 
 .label
+  position: relative
   margin: 0 auto
   height: 24px
   width: 112px
@@ -147,25 +151,38 @@ nav
   background-color: #000000
   color: #ffffff
   font-size: 11px
-  font-weight: 300
+  font-weight: 400
   text-transform: uppercase
   text-align: center
+  z-index: 2
+  &_white
+    color: #070716
+    background-color: #fff
+
 
 .title
+  position: relative
   margin-bottom: 0
-  margin-top: 38px
+  margin-top: 27px
   color: #222222
   font-size: 38px
   font-weight: 700
   text-transform: uppercase
   text-align: center
+  z-index: 2
+  &_white
+    color: #fff
 
 .subtitle
-  margin-top: 19px
+  position: relative
+  margin-top: 1px
   color: #222
   font-size: 17px
   font-weight: 400
   text-align: center
+  z-index: 2
+  &_white
+    color: #fff
 
 .reasons .reasons_block
   display: flex
@@ -202,6 +219,7 @@ nav
   min-height: 864px
   padding: 48px 0 79px
   background: url(../img/bg/mobile_bg.png) center (center / cover) no-repeat
+  
   .row
     margin-top: 32px
   &_item
@@ -243,4 +261,33 @@ nav
       margin: 0 auto
       border-radius: 100%
       cursor: pointer
-      
+
+.choise
+  position: relative
+  min-height: 900px
+  padding: 56px 0 135px 0
+  background: url(../img/bg/mobile_bg.png) center (center / cover) no-repeat
+
+  &_text
+    margin: 0 auto
+    width: 330px
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    text-align: center
+    color: #222
+
+  .car_img
+    position: relative
+    display: block
+    margin: 54px auto 0 auto
+    z-index: 2
+ 
+  .black
+    position: absolute
+    left: 0
+    top: 0
+    height: 502px
+    width: 100%
+    background-color: #070716
+    z-index: 0
