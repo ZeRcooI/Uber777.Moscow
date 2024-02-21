@@ -1,5 +1,10 @@
 $main-color: #1eacc7
 $second-color: #ff5656
+
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $main-color
   
 html
   box-sizing: border-box
@@ -91,6 +96,7 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    @include btn_hover
 
 .promo
   min-height: 800px
@@ -138,6 +144,7 @@ nav
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
+    @include btn_hover
 
 .reasons
   padding: 71px 0 65px 0
@@ -261,7 +268,26 @@ nav
       margin: 0 auto
       border-radius: 100%
       cursor: pointer
-
+      &::before
+       content: ''
+       display: block
+       width: 14px
+       height: 1px
+       background-color: $main-color
+      &::after
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        display: block
+        height: 14px
+        width: 1px
+        background-color: $main-color
+        transition: 0.1s all
+      &:hover
+        &::before, &::after
+          background-color: $second-color         
+        
 .choise
   position: relative
   min-height: 900px
@@ -291,3 +317,47 @@ nav
     width: 100%
     background-color: #070716
     z-index: 0
+
+.requaire
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nbm
+      margin-bottom: 0
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url(../icons/check_blue.svg) center (center / cover) no-repeat
+  &_descr
+    margin-top: 25px
+    color: #1ca8c3
+    font-weight: 300
+    font-size: 17px
+
+  .warning
+    .requare_title
+      color: $second-color
+    .requare_list
+      li
+        &::before
+          background: url(../icons/check_red.svg) center (center / cover) no-repeat
+          
