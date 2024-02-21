@@ -28,7 +28,7 @@ nav
   width: 100%
   height: 50px
   background-color: #212121
-  z-index: 2
+  z-index: 5
 
 .menu
   display: flex
@@ -360,3 +360,33 @@ nav
       li
         &::before
           background: url(../icons/check_red.svg) center (center / cover) no-repeat
+
+.map
+  position: relative
+  min-height: 720px
+  background-color: #080816
+  padding: 48px 0 20px 0
+  &_img
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 0
+    z-index: 0
+  &_cities
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 20px
+    z-index: 1
+    font-weight: 400
+    font-size: 15px
+    text-transform: uppercase
+    text-align: center
+    color: #1fbad6
+    text-decoration: none
+    cursor: pointer
+    &:hover
+      transition: 0.2s all
+      text-decoration: none
+      color: $second-color
+  
