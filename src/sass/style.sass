@@ -1,5 +1,6 @@
 $main-color: #1eacc7
 $second-color: #ff5656
+$black_color: #070716
 
 @mixin btn_hover
   &:hover
@@ -163,7 +164,7 @@ nav
   text-align: center
   z-index: 2
   &_white
-    color: #070716
+    color: $black_color
     background-color: #fff
 
 
@@ -315,7 +316,7 @@ nav
     top: 0
     height: 502px
     width: 100%
-    background-color: #070716
+    background-color: $black_color
     z-index: 0
 
 .requaire
@@ -389,4 +390,90 @@ nav
       transition: 0.2s all
       text-decoration: none
       color: $second-color
-  
+
+.footer
+  display: flex
+  min-height: 156px
+  background-color: #fff
+  &_inner
+    margin: 0 auto
+    margin-top: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_social
+      margin-left: 26px
+      min-width: 200px
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 6px
+      &_item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 35px
+        height: 35px
+        border-radius: 100%
+        background-color: $black_color
+    &_links
+      text-transform: uppercase
+      display: flex
+      flex-direction: column
+      &_main
+        display: flex
+        gap: 45px
+        justify-content: center
+        font-weight: 300
+        font-size: 15px
+        text-align: center
+        a
+          color: $black_color
+          text-decoration: none
+          &:hover
+            transition: 0.2s all
+            text-decoration: none
+            color: $second-color
+      &_second
+        display: flex
+        margin-top: 12px
+        font-weight: 300
+        font-size: 11px
+        gap: 21px
+        text-transform: uppercase
+        a
+          color: #999
+          text-decoration: none
+          &:hover
+            transition: 0.2s all
+            text-decoration: none
+            color: $second-color
+      &_country
+        display: flex
+        margin-top: 15px
+        justify-content: center
+        align-items: center
+        font-weight: 400
+        font-size: 11px
+        text-transform: uppercase
+        a
+          text-decoration: none
+          color: #1fbad6
+          &:hover
+            font-size: 12px
+            transition: 0.2s all
+            text-decoration: none
+            color: $second-color
+    &_mobile
+      display: flex
+      align-items: center
+      gap: 5px
+      min-width: 200px
+      margin-right: 26px
+
+  .divider
+    margin: 0 auto
+    margin-top: 11px
+    width: 300px
+    height: 5px
+    background-color: #1FBAD6
