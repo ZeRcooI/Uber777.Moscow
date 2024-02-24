@@ -1,9 +1,10 @@
 # Uber777.Moscow
 
+- Применена полная верстка на Sass
+- Сделана адаптация
 - Очередная практика Html и CSS
 - Практика с Bootstrap
-- практика тегов
-- Отличный макет с адаптацией
+- Небольшая практика с Js
 
 ![Screenshot](https://github.com/ZeRcooI/Uber777.Moscow/blob/main/src/figma/Screenshot%201.jpg)
 
